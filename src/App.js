@@ -20,19 +20,22 @@ const[search,setSearch]=useState("")
 const[rate,setRate]=useState(1) 
   return (
     <div className="App">
+     <Navbarr/>
+     <Filter setSearch={setSearch} setRate={setRate} rate={rate} />
+    <Add addhandler={addhandler} />
+   <hr/>
 <Routes>
 <Route path='/' element={    <MovieListe movieListe={movieListe} search={search} rate={rate} />
 }  />
-<Route path='/trailer/:ID' element={<Trailer/> } />
+
+<Route path='/trailer/:ID' element={<Trailer  /> } />
 </Routes>
 
 
 
-      <Navbarr/>
+     
     
     
-    <Filter setSearch={setSearch} setRate={setRate} rate={rate} />
-    <Add addhandler={addhandler} />
    
     
     </div>

@@ -20,7 +20,7 @@ const MovieCard = ({movie}) => {
         <Card.Title>{movie.description} </Card.Title>
 
        <Rate rate={movie.rate} />
-       <Link to={`/trailer${movie.id}`} ><Button variant="primary">Go somewhere</Button></Link>
+       <Link to={`/trailer/${movie.id}`} ><Button variant="primary">Go somewhere</Button></Link>
       </Card.Body>
       
     </Card>

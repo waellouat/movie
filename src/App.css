@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background: black;
+
 }
 
 .App-logo {
@@ -51,4 +51,8 @@ display: flex;
 }
 .fa-star{
   color: gold;
+}
+.trailer{
+  color: blue;
+  text-align: center;
 }
